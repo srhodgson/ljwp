@@ -5,8 +5,15 @@ import java.util.Scanner;
 public class SwitchOne {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a sport --> ");
-        String sport = sc.next();
+        String sport;
+
+        try {
+            System.out.print("Enter a sport --> ");
+            sport = sc.next();
+        } finally {
+            sc.close();
+        }
+        
 
         switch(sport){
             case "Soccer":

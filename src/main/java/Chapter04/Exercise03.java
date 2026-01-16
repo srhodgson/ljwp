@@ -18,9 +18,9 @@ public class Exercise03 {
             System.out.println("You don't have enough experience to work with the dinos yet");
         } else if (yearsExperience > 0 && yearsExperience < 6) {
             System.out.println("You can work with the small dinosaurs");
-        } else if (yearsExperience > 5 && yearsExperience < 11) {
+        } else if (yearsExperience >= 6 && yearsExperience < 11) {
             System.out.println("You can work with the medium sized dinosaurs");
-        } else if (yearsExperience > 10 && yearsExperience < 16) {
+        } else if (yearsExperience >= 11 && yearsExperience < 16) {
             System.out.println("You can work with the large dinosaurs");
         } else {
             System.out.println("You can work with the T Rex!");

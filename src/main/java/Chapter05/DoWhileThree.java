@@ -1,6 +1,6 @@
 package Chapter05;
 
-import java.util.Scanner;https://aka.ms/javafeedback?ref=game
+import java.util.Scanner;
 
 public class DoWhileThree {
     public static void main(String[] args) {

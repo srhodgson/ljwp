@@ -1,11 +1,13 @@
 package Chapter06;
 
+import java.util.Arrays;
+
 public class Exercise01 {
     static void main(String[] args) {
-        String[] dinoNames = {"T-Rex","Triceratops","Brachiosaurus","Pterodactyl"};
+        String[] dinosaurs = {"T-Rex","Diplodocus","Stegosaurus","Triceratops","Microraptor"};
 
-        for (int i = 0; i < dinoNames.length; i++) {
-            System.out.println(dinoNames[i]);
+        for (String dino : dinosaurs) {
+            System.out.println(dino);
         }
     }
 }

@@ -1,26 +1,24 @@
 package Chapter07;
 
-import java.util.Arrays;
 
 public class Exercise03 {
     public static void main(String[] args) {
-        int[] dinoAges = { 24, 14, 17, 60, 3, 34, 19, 32 };
-        
+        int[] ages = { 25, 48, 27, 10, 4, 15 };
 
-        System.out.println("The average age of the dinosaurs is: " + calcAvgAge(dinoAges));
+        System.out.println("The average age of the dinosaurs is " + avgAges(ages));
+
     }
 
-    public static int calcAvgAge(int[] ages) {
+    public static int avgAges(int[] ages) {
+        int totalAge = 0;
         int avgAge = 0;
-        int totAge = 0;
 
-        for (int age : ages) {
-            totAge += age;
+        for (int age : ages){
+            totalAge += age;
         }
 
-        avgAge = totAge / ages.length;
+        avgAge = totalAge / ages.length;
 
         return avgAge;
     }
 }
-
